@@ -1,5 +1,5 @@
 # Этап сборки
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 # Устанавливаем рабочую директорию
 WORKDIR /src
@@ -15,7 +15,7 @@ COPY . .
 RUN dotnet publish "Ticket_system/Ticket_system.csproj" -c Release -o /app
 
 # Этап выполнения
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
