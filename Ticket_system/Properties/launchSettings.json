@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ticket_system": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
