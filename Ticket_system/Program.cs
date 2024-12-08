@@ -63,11 +63,11 @@ class Program
         };
 
         Bot.StartReceiving(
-            updateHandler: HandleUpdateAsync,
-            errorHandler: HandleErrorAsync,
-            receiverOptions: receiverOptions,
-            cancellationToken: cts.Token
-        );
+    updateHandler: HandleUpdateAsync,
+    pollingErrorHandler: HandleErrorAsync,
+    receiverOptions: receiverOptions,
+    cancellationToken: cts.Token
+);
 
         Console.WriteLine("Бот запущен. Нажмите любую клавишу для завершения.");
         Console.ReadLine();
